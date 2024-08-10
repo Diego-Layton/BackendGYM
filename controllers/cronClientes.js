@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 import cron from "node-cron";
 import twilio from "twilio";
 import Cliente from "../models/clientes.js"
-
+import 'dotenv/config'
 
 const accountSid = process.env.TWILIO_ACCOUNT_SID;
 const authToken = process.env.TWILIO_AUTH_TOKEN;
@@ -10,7 +10,7 @@ const client = twilio(accountSid, authToken);
 
 
 // cron.schedule('00 22 * * *', async () => {
-    cron.schedule('40 18 * * *', async () => {
+    cron.schedule('46 18 * * *', async () => {
     try {
  
       const today = new Date();
