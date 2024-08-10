@@ -24,14 +24,14 @@ const helpersCompras={
     },
 
 
-    ajustarInventario: async (idInventario, diferencia) => {
-        const inventario = await Inventario.findById(idInventario);
-        if (!inventario) {
-            throw new Error("Producto no encontrado");
-        }
-        inventario.cantidad += diferencia;
-        await inventario.save();
+  ajustarInventario: async (idInventario, diferencia) => {
+    const inventario = await Inventario.findById(idInventario);
+    if (!inventario) {
+        throw new Error("Producto no encontrado");
     }
+    inventario.cantidad = Number(inventario.cantidad) + Number(diferencia);
+    await inventario.save();
+}
   
     }
 
