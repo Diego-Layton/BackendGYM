@@ -8,7 +8,7 @@ import Cliente from "../models/clientes.js"
 // const authToken = process.env.TWILIO_AUTH_TOKEN;
 
 const accountSid ="ACc4e57577a67dbfd95e81f94ce029014e"
-const authToken ="12155ee4208768e44f14ec399aee9f50"
+const authToken ="023db2b667cb25c4e98159f882590bdb"
 
 const client = twilio(accountSid, authToken);
 
