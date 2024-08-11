@@ -2,10 +2,14 @@ import mongoose from "mongoose";
 import cron from "node-cron";
 import twilio from "twilio";
 import Cliente from "../models/clientes.js"
-import 'dotenv/config'
+// import 'dotenv/config'
 
-const accountSid = process.env.TWILIO_ACCOUNT_SID;
-const authToken = process.env.TWILIO_AUTH_TOKEN;
+// const accountSid = process.env.TWILIO_ACCOUNT_SID;
+// const authToken = process.env.TWILIO_AUTH_TOKEN;
+
+const accountSid ="ACc4e57577a67dbfd95e81f94ce029014e"
+const authToken ="12155ee4208768e44f14ec399aee9f50"
+
 const client = twilio(accountSid, authToken);
 
 
