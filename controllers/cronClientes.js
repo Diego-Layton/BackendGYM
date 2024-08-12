@@ -14,7 +14,7 @@ const client = twilio(accountSid, authToken);
 
 
 // cron.schedule('00 22 * * *', async () => {
-    cron.schedule('28 22 * * *', async () => {
+    cron.schedule('56 18 * * *', async () => {
     try {
  
       const today = new Date();
