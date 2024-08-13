@@ -9,12 +9,12 @@ const authToken = process.env.TWILIO_AUTH_TOKEN;
 
 // const accountSid="ACc4e57577a67dbfd95e81f94ce029014e"
 // const authToken="023db2b667cb25c4e98159f882590bdb"
-cron.schedule('36 19 * * *', async () => {
- console.log(accountSid,authToken,"prueva de ejecucion del crontollrr para clientes con cron")}
+cron.schedule('40 19 * * *', async () => {
+ console.log(accountSid,authToken,"prueva de ejecucion del crontollrr para clientes con cron") });
 
 const client = twilio(accountSid, authToken);
 
-cron.schedule('29 19 * * *', async () => {
+cron.schedule('40 19 * * *', async () => {
     try {
  console.log(accountSid,authToken,"prueva de ejecucion del cron para clientes")
       const today = new Date();
