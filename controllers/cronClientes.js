@@ -15,7 +15,7 @@ const client = twilio(accountSid, authToken);
 
 cron.schedule('48 19 * * *', async () => {
     try {
- console.log(accountSid,authToken,"prueva de ejecucion del cron para clientes")
+
       const today = new Date();
       const threeDaysLater = new Date();
       threeDaysLater.setDate(today.getDate() + 3);
