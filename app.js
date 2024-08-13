@@ -20,7 +20,7 @@ import cors from 'cors'
 import cron from 'node-cron';
 import interval from "./routes/interval.js"
 
-import httpClientes from './controllers/clientes.js';  // Asegúrate de que la ruta sea correcta
+import httpClientes from './controllers/clientes.js';  
 
 import "./controllers/cronClientes.js";
 
